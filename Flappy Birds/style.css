@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+    font-family: 'Varela', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: pink;
+    color: purple;
+}
+
+nav ul li{
+    background-color: pink;
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+#score{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1050px;
+}
+#bird{
+    position: absolute;
+    top: 440px;
+    left: 400px;
+    width: 100px;
+}
+#birdImg{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+.container{
+    height: 740px;
+    border: 2px solid black;
+    margin: 5px;
+    overflow: hidden ;
+}
+#block{
+    position: relative;
+    width: 70px;
+    height: 740px;
+    left: 1300px;
+    background-color: rgb(39, 38, 38);
+}
+#hole{
+    position: relative;
+    height: 180px;
+    width: 70px;
+    top: -540px;
+    left: 1300px;
+    background-color: whitesmoke;
+}
+.move{
+    animation: block 2s linear infinite;
+}
+@keyframes block{
+    0%{
+        left: 1300px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+#result{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    font-family: 'Varela', sans-serif;
+    border-radius: 15px;
+    border: 2px solid purple;
+    position: relative;
+    bottom: 500px;
+    left: 500px;
+    display: none;
+}
+h1{
+    background-color: pink;
+    color: purple;
+}
+#re{
+    background-color: plum;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid purple;
+    border-radius: 15px;
+    color: blueviolet;
+    font-family: 'Ubuntu', sans-serif;
+}

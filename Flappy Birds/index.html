@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Birds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand">Play Flappy Birds</li>
+            <li id="score">Score : 0</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="block" class="move"></div>
+        <div id="hole" class="move"></div>
+        <div id="bird">
+            <img src="bird.png" id="birdImg" class="birdFall">
+        </div>
+    </div>
+    <div id="result">
+        <h1>Game Over!</h1>
+        <button id="re" onclick="location.reload()">RESTART</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
